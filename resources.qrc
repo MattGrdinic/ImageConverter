@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/Adobe ICC Profiles/CMYK/USWebUncoated.icc</file>
+        <file>resources/Adobe ICC Profiles/CMYK/USWebCoatedSWOP.icc</file>
+        <file>resources/Adobe ICC Profiles/RGB/ColorMatchRGB.icc</file>
+        <file>resources/Adobe ICC Profiles/RGB/AppleRGB.icc</file>
+        <file>resources/Adobe ICC Profiles/RGB/AdobeRGB1998.icc</file>
+    </qresource>
+</RCC>

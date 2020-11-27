@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>469</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Image Converter</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QComboBox" name="comboBox_optimizationLevel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>8</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Base Code</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Optimization 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Optimization 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Optimization 3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Optimization 4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Optimization 5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SSE 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SSE 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Raw SSE Assembly</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTextEdit" name="textEditMessages">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>76</y>
+      <width>421</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditFolder">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>40</y>
+      <width>321</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>/home/matthew/Documents/images-to-convert</string>
+    </property>
+    <property name="placeholderText">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Optimization Level:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSelect">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>91</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Folder</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select A Folder To Convert:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_profileInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>US Web Uncoated</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>US Web Coated SWOP</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_profileOutput">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>360</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Adobe RGB 1998</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Apple RGB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Color Match RGB</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Input Color Profile:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>340</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Output Color Profile:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonStart">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>500</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Conversion Process</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>410</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rendering Intent:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_renderingIntent">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>430</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Absolute Colormetric</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Perceptual</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Relative Colormetric</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Saturation</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_clearDisplay">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>101</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Display</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>469</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
